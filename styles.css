@@ -18,6 +18,7 @@ th.mobile-only {
 
 
 
+
 /*For indenting the pseudo-tables in mobile view*/
 tbody.wide-table-row {
   /*border-collapse: separate;*/
@@ -44,6 +45,10 @@ tbody.wide-table-row {
 
 
 @media screen and (max-width: 40em) {
+
+  table {
+    display: block;
+  }
 
   table .wide-table-header-row > th{
     display: block;
