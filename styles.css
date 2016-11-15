@@ -13,17 +13,15 @@
 }
 
 th.mobile-only {
-  display: table-row;
+  display: none;
 }
 
-.wide-table-cell > td {
-  display: table-row;
-}
+
 
 /*For indenting the pseudo-tables in mobile view*/
 tbody.wide-table-row {
-  border-collapse: separate;
-  border-spacing: 10px 0px;
+  /*border-collapse: separate;*/
+  /*border-spacing: 10px 0px;*/
 }
 
 /* Mobile view space between pseduo-tables */
@@ -35,7 +33,7 @@ tbody.wide-table-row {
 /* Adaptor rules for bootstrap */
 .table-bordered > tbody > tr.wide-table-cell > td, .table-bordered > tbody > tr.wide-table-cell > th {
   border: 0em;
-  line-height: 1.3;
+  /*line-height: 1.3;*/
 }
 
 .table-bordered > tbody > tr.wide-table-header-row > th {
@@ -43,49 +41,59 @@ tbody.wide-table-row {
 }
 
 /* Beginning of Responsive Accessible Table CSS logic */
-.wide-table-header-row {
-  display: none;
-}
+
 
 @media screen and (max-width: 40em) {
 
+  table .wide-table-header-row > th{
+    display: block;
+  }
+  
+  .wide-table-cell > td {
+    display: block;
+  }
+  
+  .desktop-only {
+    display: none;
+  }
+
+  th.mobile-only {
+    display: block;
+  }
+
   /*Mobile view space before and after pseudo-tables*/
   tbody.wide-table-row:before, tbody.wide-table-row:after {
-    content: "\00a0";
+    /*content: "\00a0";
     display: block;
     line-height: 1;
-    color: transparent;
+    color: transparent;*/
   }
 
   /*Mobile view cell spacing*/
   .table-bordered > tbody > tr.wide-table-cell:not(:last-child):after {
-    content: "\00a0";
+    /*content: "\00a0";
     display: block;
     line-height: .8;
-    color: transparent;
+    color: transparent;*/
   }
 }
 
 @media screen and (min-width: 40em) {
 
-  table .wide-table-header-row {
-    display: table-row;
-  }
+  
 
   table .wide-table-row {
-    display: table-row;
+    /*display: table-row;*/
   }
 
-  th.mobile-only {
-    display: none;
-  }
+  
 
   .wide-table-cell {
-    display: table-cell;
+    /*display: table-cell;*/
   }
 
   .wide-table-cell > td {
-    display: inline;
+    /*display: inline;*/
   }
 
   .table>tbody+tbody {
