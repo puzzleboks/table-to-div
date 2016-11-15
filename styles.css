@@ -2,14 +2,6 @@
   border: none;
 }
 
-.desktop-table-caption {
-  color: #333333;
-}
-
-.mobile-table-caption {
-  display: none;
-}
-
 th.mobile-only {
   display: none;
 }
@@ -24,16 +16,6 @@ th.mobile-only {
   border: 0em;
 }
 
-@media screen and (min-width: 40em) {
-  .desktop-table-caption {
-    display: table-caption;
-  }
-
-  .mobile-table-caption {
-    display: none;
-  }
-} 
-
 @media screen and (max-width: 40em) {
 
   table {
@@ -41,14 +23,6 @@ th.mobile-only {
   }
 
   table .wide-table-header-row > th{
-    display: block;
-  }
-
-  .desktop-table-caption {
-    display: none;
-  }
-
-  .mobile-table-caption {
     display: block;
   }
   
