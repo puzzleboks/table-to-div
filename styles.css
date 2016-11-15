@@ -1,32 +1,10 @@
-.table-caption {
-  /*padding-left: 10px;
-  padding-bottom: 10px;
-  color: #333333;*/
-}
-
 .table-bordered {
   border: none;
-}
-
-.table>tbody+tbody {
-  /*border-top: 1px solid #ddd;*/
 }
 
 th.mobile-only {
   display: none;
 }
-
-/*For indenting the pseudo-tables in mobile view*/
-tbody.wide-table-row {
-  /*border-collapse: separate;*/
-  /*border-spacing: 10px 0px;*/
-}
-
-/* Mobile view space between pseduo-tables */
-/*tr.spacer, tr.spacer > td {
-  column-span: all;
-  border-width: 1px solid #fff;
-}*/
 
 /* Adaptor rules for bootstrap */
 .table-bordered > tbody > tr.wide-table-cell > td, .table-bordered > tbody > tr.wide-table-cell > th {
@@ -37,9 +15,6 @@ tbody.wide-table-row {
 .table-bordered > tbody > tr.wide-table-header-row > th {
   border: 0em;
 }
-
-/* Beginning of Responsive Accessible Table CSS logic */
-
 
 @media screen and (max-width: 40em) {
 
@@ -67,42 +42,4 @@ tbody.wide-table-row {
     display: block;
   }
 
-  /*Mobile view space before and after pseudo-tables*/
-  tbody.wide-table-row:before, tbody.wide-table-row:after {
-    /*content: "\00a0";
-    display: block;
-    line-height: 1;
-    color: transparent;*/
-  }
-
-  /*Mobile view cell spacing*/
-  .table-bordered > tbody > tr.wide-table-cell:not(:last-child):after {
-    /*content: "\00a0";
-    display: block;
-    line-height: .8;
-    color: transparent;*/
-  }
-}
-
-@media screen and (min-width: 40em) {
-
-  
-
-  table .wide-table-row {
-    /*display: table-row;*/
-  }
-
-  
-
-  .wide-table-cell {
-    /*display: table-cell;*/
-  }
-
-  .wide-table-cell > td {
-    /*display: inline;*/
-  }
-
-  .table>tbody+tbody {
-    /*border-top: none;*/
-  }
 }
