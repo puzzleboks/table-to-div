@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Responsive Table CSS</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 tabindex="0">Responsive Table with pure CSS</h1>
+
+    <table tabindex="0" class="table table-bordered">
+      <caption class="table-caption">What you owe (current data):</caption>
+      <tr class="wide-table-header-row">
+        <th id="Reason-for-Payment" scope="col">Reason for Payment</th>
+        <th id="Payment-Type" scope="col">Payment Type</th>
+        <th id="Tax-Year" scope="col">Tax Year</th>
+        <th id="Amount-Owed" scope="col">Amount Owed</th>
+      </tr>
+      <tbody class="wide-table-row">
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Reason for Payment</th>
+          <td headers="Reason-for-Payment">Shared Responsibility Payment (select Installment Agreement)</td>
+        </tr>
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Payment Type</th>
+          <td headers="Payment-Type">Health Care (Form 1040)</td>
+        </tr>
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Tax Year</th>
+          <td headers="Tax-Year">2014</td>
+        </tr>
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Amount Owed</th>
+          <td headers="Amount-Owed">$644.57</td>
+        </tr>
+      </tbody>
+      <!-- <tr class="spacer"><td colspan="2">&nbsp;</td></tr> -->
+      <tbody class="wide-table-row" class="mobile-only-table">
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Reason for Payment</th>
+          <td headers="Reason-for-Payment">Tax Return or Notice</td>
+        </tr>
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Payment Type</th>
+          <td headers="Payment-Type">1040</td>
+        </tr>
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Tax Year</th>
+          <td headers="Tax-Year">2013</td>
+        </tr>
+        <tr class="wide-table-cell">
+          <th class="mobile-only" scope="row">Amount Owed</th>
+          <td headers="Amount-Owed">$205.25</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+
+</html>
