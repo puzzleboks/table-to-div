@@ -17,7 +17,6 @@ th.mobile-only {
 }
 
 @media screen and (max-width: 40em) {
-
   table {
     display: block;
   }
