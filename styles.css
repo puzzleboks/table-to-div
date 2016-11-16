@@ -1,45 +1,46 @@
 .table-bordered {
-  border: none;
+  /*border: none;*/
 }
 
 th.mobile-only {
-  display: none;
+  /*display: table-cell;*/
 }
 
 /* Adaptor rules for bootstrap */
 .table-bordered > tbody > tr.wide-table-cell > td, .table-bordered > tbody > tr.wide-table-cell > th {
-  border: 0em;
+  /*border: 0em;*/
   /*line-height: 1.3;*/
 }
 
 .table-bordered > tbody > tr.wide-table-header-row > th {
-  border: 0em;
+  /*border: 0em;*/
 }
 
 @media screen and (max-width: 40em) {
 
   table {
-    display: block;
+    /*display: block;*/
   }
 
   table .wide-table-header-row > th{
-    display: block;
+    /*display: none;*/
   }
   
   .wide-table-cell > td {
-    display: block;
+    /*display: table-row;*/
   }
 
   .wide-table-cell {
     border-top: 1px solid #ddd;
+    /*display: table-row;*/
   }
   
   .desktop-only {
-    display: none;
+    /*display: table-column;*/
   }
 
   th.mobile-only {
-    display: block;
+    /*display: table-row;*/
   }
 
 }
